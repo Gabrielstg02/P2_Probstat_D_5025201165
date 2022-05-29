@@ -1,6 +1,5 @@
 # P2_Probstat_D_5025201165
 
-# P2_PROBSTAT_F_5025201039
 
 ## Nama-NRP
 | Nama             | NRP        |
