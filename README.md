@@ -14,13 +14,13 @@ Hasil yang didapatkan pada tabel di atas menunjukkan bahwa kadar saturasi oksige
 
     Pertama-pertama masukkan semua data yang telah tersedia di tabel sebuah variabel sebagai berikut
 
-        ```
+        
          orang.ke = c(seq(1:9))
          oksigen.sebelum = c(78, 75, 67, 77, 70, 72, 78, 74, 77)
          oksigen.sesudah = c(100, 95, 70, 90, 90, 90, 89, 90, 100)
          data = data.frame(orang.ke,oksigen.sebelum, oksigen.sesudah)
          n = 9
-        ```  
+        
 
     Kemudian cari standar deviasinya. Standar deviasi sebelum dan sesudah aktivitas sebagai berikut
 
