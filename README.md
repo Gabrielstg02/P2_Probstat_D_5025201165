@@ -1,10 +1,6 @@
 # P2_Probstat_D_5025201165
 
-
-## Nama-NRP
-| Nama             | NRP        |
-|------------------|------------|
-| Abd. Wahid  | 5025201039 |
+Gabriel Solomon Sitanggang (5025201165)
 
 <br />
 
