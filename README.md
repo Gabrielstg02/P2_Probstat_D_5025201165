@@ -24,12 +24,12 @@ Hasil yang didapatkan pada tabel di atas menunjukkan bahwa kadar saturasi oksige
 
     Kemudian cari standar deviasinya. Standar deviasi sebelum dan sesudah aktivitas sebagai berikut
 
-        ```
+        
          selisih = data$oksigen.sesudah - data$oksigen.sebelum
          cat("Standar deviasi selisih pasangan pengamatan : ")
          standardev = sd(selisih)
          standardev
-        ```
+        
 
       <img width="1267" alt="image" src="https://user-images.githubusercontent.com/78538191/170873225-e9153b09-ea51-4ab7-b32b-d15638f431ec.png"> 
     
@@ -38,10 +38,10 @@ Hasil yang didapatkan pada tabel di atas menunjukkan bahwa kadar saturasi oksige
 
    - b. Carilah nilai t (p-value)
       Mencari nilai t (p-value) digunakan fungsi `t.test` sebagai berikut
-        ```
+        
          # Menggunakan t-test
          t.test(before, after, alternative = "greater", var.equal = FALSE)
-       ```    
+       
        Didapatkan hasil berikut ini:
        
       <img width="616" alt="image" src="https://user-images.githubusercontent.com/86004023/170858480-4e5c7d24-b5be-4ad1-8c0f-554450bbb4ca.png">
@@ -50,17 +50,17 @@ Hasil yang didapatkan pada tabel di atas menunjukkan bahwa kadar saturasi oksige
 
    - c. Tentukanlah Apakah Terdapat Pengaruh yang Signifikan Secara Statistika dalam Hal Kadar Saturasi Oksigen, Sebelum dan Sesudah Melakukan Aktivitas 𝐴  jika Diketahui Tingkat Signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
        Langkah pertama yaitu melihat hasil komparasi dua variabel berikut
-        ```
+        
          var.test(before, after)
-       ```    
+        
        Didapatkan hasil sebagai berikut:
        
        <img width="593" alt="image" src="https://user-images.githubusercontent.com/86004023/170858996-31f369f7-66ad-4279-9b12-2562a1f0e027.png">
        
        Langkah berikutnya berguna untuk melihat pengaruh jika tingkat signifikasi 5% dan tidak ada pengaruh yang signifikan secara statistika, dapat dilihat sebagai berikut:
-       ```
+       
          t.test(before, after, mu = 0, alternative = "two.sided", var.equal = TRUE)
-       ```  
+       
       Dapat dilihat hasil sebagai berikut:
 
       <img width="692" alt="image" src="https://user-images.githubusercontent.com/86004023/170859040-a1c6aaaa-0fe0-4834-8778-eedcf4530034.png">
@@ -81,13 +81,13 @@ Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahu
   - b. Jelaskan maksud dari output yang dihasilkan!
        Diketahui n = 100, Rata-Rata (X̄) = 23500, dan standar deviasi(σ) = 3900 Maka null hipotesis adalah
        Maka null hipotesis adalah 
-          ```
+          
           H0 : μ = 20000
-          ```
+          
           Alternatif hipotesisnya yaitu
-          ```
+          
           H1 : μ > 20000
-          ```
+          
 
        <img width="472" alt="image" src="https://user-images.githubusercontent.com/86004023/170864744-4f24236a-662f-4b7c-a92e-c253bd78cb65.png">
        
@@ -141,9 +141,9 @@ Diketahui perusahaan memiliki seorang data analyst ingin memecahkan permasalahan
 
   - B. Hitung Sampel Statistik
       Menghitung sampel statistik digunakan fungsi `tsum.test` sebagai berikut
-        ```
+        
         tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19, mean.y =2.79 , s.y = 1.32, n.y = 27, alternative = "greater", var.equal = TRUE)
-        ```
+        
   
       <img width="604" alt="image" src="https://user-images.githubusercontent.com/86004023/170865478-78c8a8b0-6542-4473-ac95-97d6a5b29471.png">
       
