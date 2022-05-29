@@ -1,7 +1,6 @@
 # P2_Probstat_D_5025201165
 
 Gabriel Solomon Sitanggang (5025201165)
-
 <br />
 
 ## Soal 1
